@@ -3,19 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { BasicHighlightDirective } from './directive/basic-highlight.directive';
-import { BetterHighlightDirective } from './directive/better-highlight.directive';
-import { HoverHighlightDirective } from './directive/hover-highlight.directive';
-import { BetterHoverHighlightDirective } from './directive/better-hover-highlight.directive';
+import { Highlight1Directive } from './attribute-directive/highlight1.directive';
+import { Highlight2Directive } from './attribute-directive/highlight2.directive';
+import { Highlight3Directive } from './attribute-directive/highlight3.directive';
+import { Highlight4Directive } from './attribute-directive/highlight4.directive';
+import { Highlight5Directive } from './attribute-directive/highlight5.directive';
+import { IfCloneDirective } from './structural-directive/if-clone.directive';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
   declarations: [
     AppComponent,
-    BasicHighlightDirective,
-    BetterHighlightDirective,
-    HoverHighlightDirective,
-    BetterHoverHighlightDirective,
+    Highlight1Directive,
+    Highlight2Directive,
+    Highlight3Directive,
+    Highlight4Directive,
+    Highlight5Directive,
+    IfCloneDirective,
   ],
   bootstrap: [AppComponent],
 })

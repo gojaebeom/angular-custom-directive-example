@@ -1,10 +1,18 @@
-<div appBasicHighlight="red">hello world!</div>
-<div appBetterHighlight="blue">hello world!</div>
-<div appHoverHighlight>hello world!</div>
-<div
-  appBetterHoverHighlight
-  [highlightColor]="'purple'"
-  [defaultColor]="'white'"
+<p appHighlight1>hello world!</p>
+
+<p appHighlight2>hello world!</p>
+
+<p appHighlight3>hello world!</p>
+
+<p appHighlight4="orange">hello world!</p>
+
+<p
+  appHighlight5
+  [highlightBackgroundColor]="'purple'"
+  [defaultBackgroundColor]="'pink'"
 >
   hello world!
-</div>
+</p>
+
+<div *appIfClone="true">do you see me?</div>
+<ng-template [appIfClone]="true"> do you see me? </ng-template>
